@@ -1,0 +1,7 @@
+[package]
+name = "sopcast"
+version = "0.1.0"
+authors = ["Adir Tzuberi <adirt@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
