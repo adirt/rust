@@ -10,6 +10,9 @@ fn main() {
         eprintln!("Usage: sopcast <channel>\n\n{}", error_message);
         process::exit(1);
     });
-
-    run(&config);
+    if let Err(error_message) = run(&config) {
+        eprintln!("SopCast error: {}", error_message);
+        process::exit(1);
+    }
+    process::exit(0);
 }

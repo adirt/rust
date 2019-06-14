@@ -19,7 +19,11 @@ impl Config {
                     Err(invalid_input_err_msg)
                 }
             }
-            Err(e) => Err(invalid_input_err_msg)
+            Err(_) => Err(invalid_input_err_msg)
         }
+    }
+
+    pub fn get_channel(&self) -> u32 {
+        self.channel
     }
 }

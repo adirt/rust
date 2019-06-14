@@ -5,3 +5,4 @@ authors = ["Adir Tzuberi <adirt@protonmail.com>"]
 edition = "2018"
 
 [dependencies]
+dirs = "2.0.1"
